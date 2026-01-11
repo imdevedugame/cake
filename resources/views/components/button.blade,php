@@ -1,0 +1,5 @@
+@props(['type' => 'button'])
+
+<button {{ $attributes->merge(['class' => 'btn-latte px-6 py-2 rounded-full font-semibold']) }} type="{{ $type }}">
+    {{ $slot }}
+</button>
